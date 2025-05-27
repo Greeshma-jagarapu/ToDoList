@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    background: rgb(80, 79, 79);
+}
+
+h2{
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.container{
+    width: 50%;
+    padding: 2rem;
+    padding-bottom: 1.2rem;
+    background: white;
+    border-radius: 5px;
+}
+
+.input-field{
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-field input{
+    border: none;
+    outline: none;
+    padding: 1rem 7rem 1rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.input-field .add-btn{
+    border: none;
+    outline: none;
+    padding: 0.8rem 2rem;
+    background: green;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border-radius: 5px;
+}
+
+.input-field input{
+    width: 100%;
+}
+
+.tasks-box ul li{
+    list-style: none;
+    display: flex;
+    padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+    align-items: center;
+    height: 55px;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+    background: rgb(224, 222, 222);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.rcomplete{
+    background: radial-gradient(green,lightgreen);
+}
+
+.tcomplete{
+    text-decoration: line-through;
+}
+
+
+.tasks-box ul li .radio-btn{
+    height: 15px;
+    width: 15px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+.tasks-box ul li .task{
+    width: 78%;
+    font-size: 0.88rem;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tasks-box ul li .remove-btn{
+    border: none;
+    outline: none;
+    padding: 0.9rem 1.2rem;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+@media (max-width: 960px){
+    .container{
+        width: 60%;
+    }
+}
+
+@media (max-width: 850px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 670px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .input-field .add-btn{
+        padding: 0.8rem 1rem;
+    }
+
+    .tasks-box ul li .remove-btn{
+        padding: 0.9rem 0.7rem;
+    }
+    
+}
